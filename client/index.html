@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FOODIE — good food, easy ordering. Browse the menu, order in seconds and track your delivery." />
+  <title>FOODIE — Good food. Easy ordering.</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="sticky top-0 z-50 border-b border-line/70 bg-cream/90 backdrop-blur-md" data-header>
+    <div class="shell flex min-h-[76px] items-center justify-between gap-6">
+      <a class="brand" href="index.html" aria-label="FOODIE home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span class="brand-copy">
+          <strong>FOODIE</strong>
+          <small>Good food. Easy ordering.</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="primary-nav" data-nav aria-label="Primary">
+        <a class="nav-link" href="#menu">Menu</a>
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="#why">Why FOODIE</a>
+        <a class="nav-link lg:border-l lg:border-line lg:pl-7 max-lg:border-0 max-lg:pl-3" href="pages/login.html">Sign in</a>
+        <a class="btn btn-primary btn-sm max-lg:mt-1.5" href="pages/login.html">Order now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero pb-20 pt-12 md:pb-24 md:pt-20">
+      <div class="shell relative grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <div class="reveal" data-reveal>
+          <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Freshly made · Delivered hot</p>
+          <h1 class="text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
+            Good food.<br /><span class="text-accent-strong">Easy ordering.</span>
+          </h1>
+          <p class="mt-5 max-w-[51ch] text-base text-muted md:text-lg">
+            Crave-worthy meals from our kitchen to your door. Browse the menu, build your
+            plate and track every step — no phone calls, no guesswork.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a class="btn btn-primary" href="pages/login.html">
+              Start your order
+              <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h12M11 5l5 5-5 5" /></svg>
+            </a>
+            <a class="btn btn-ghost" href="#menu">Explore the menu</a>
+          </div>
+          <dl class="mt-10 flex flex-wrap gap-x-10 gap-y-5 border-t border-line pt-6">
+            <div class="min-w-[96px] max-sm:min-w-[84px]">
+              <dt class="text-2xl font-extrabold tracking-tight">30 min</dt>
+              <dd class="text-[0.8rem] text-muted">average delivery</dd>
+            </div>
+            <div class="min-w-[96px] max-sm:min-w-[84px]">
+              <dt class="text-2xl font-extrabold tracking-tight">4.8/5</dt>
+              <dd class="text-[0.8rem] text-muted">diner rating</dd>
+            </div>
+            <div class="min-w-[96px] max-sm:min-w-[84px]">
+              <dt class="text-2xl font-extrabold tracking-tight">100%</dt>
+              <dd class="text-[0.8rem] text-muted">freshly cooked</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-art reveal" data-reveal aria-hidden="true">
+          <div class="art-halo"></div>
+          <div class="order-card">
+            <div class="order-head">
+              <span class="order-icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 9h16l-1.3 8.2a2 2 0 0 1-2 1.8H7.3a2 2 0 0 1-2-1.8L4 9Z" /><path d="M8 9V7a4 4 0 0 1 8 0v2" /></svg>
+              </span>
+              <div class="order-title">
+                <strong>Order #2048</strong>
+                <small>Arriving in 24 min</small>
+              </div>
+              <span class="badge badge-live">On the way</span>
+            </div>
+
+            <ul class="order-list my-1.5">
+              <li>
+                <span class="thumb thumb-1"></span>
+                <span class="order-line"><strong>Paneer Butter Masala</strong><small>Extra gravy · 1</small></span>
+                <b>₹280</b>
+              </li>
+              <li>
+                <span class="thumb thumb-2"></span>
+                <span class="order-line"><strong>Smoky Chicken Burger</strong><small>No onion · 1</small></span>
+                <b>₹220</b>
+              </li>
+              <li>
+                <span class="thumb thumb-3"></span>
+                <span class="order-line"><strong>Mango Lassi</strong><small>Chilled · 2</small></span>
+                <b>₹180</b>
+              </li>
+            </ul>
+
+            <div class="order-foot">
+              <span>Total</span>
+              <strong>₹680</strong>
+            </div>
+          </div>
+
+          <div class="float-card float-rating">
+            <span class="stars">★★★★★</span>
+            <strong>4.8 rating</strong>
+            <small>2,400+ happy diners</small>
+          </div>
+          <div class="float-card float-fresh">
+            <span class="fresh-dot"></span>
+            <span><strong>Freshly cooked</strong><small>Made to order</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-line bg-paper" aria-label="Service highlights">
+      <div class="shell grid gap-4 py-5 md:grid-cols-3 md:gap-5">
+        <div class="flex items-center gap-3 md:border-l md:border-line md:pl-5 md:first:border-0 md:first:pl-0">
+          <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent-strong">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z" /><circle cx="7" cy="18" r="1.8" /><circle cx="17.5" cy="18" r="1.8" /></svg>
+          </span>
+          <span class="flex flex-col leading-tight"><strong class="text-[0.86rem]">Free delivery</strong><small class="text-[0.74rem] text-muted">On orders over ₹499</small></span>
+        </div>
+        <div class="flex items-center gap-3 md:border-l md:border-line md:pl-5">
+          <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent-strong">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5" /><path d="M12 7v5l3 2" /></svg>
+          </span>
+          <span class="flex flex-col leading-tight"><strong class="text-[0.86rem]">Live tracking</strong><small class="text-[0.74rem] text-muted">Follow every step</small></span>
+        </div>
+        <div class="flex items-center gap-3 md:border-l md:border-line md:pl-5">
+          <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-accent-soft text-accent-strong">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.5 3 7.7 7 9 4-1.3 7-4.5 7-9V6l-7-3Z" /><path d="m9 12 2 2 4-4" /></svg>
+          </span>
+          <span class="flex flex-col leading-tight"><strong class="text-[0.86rem]">Secure checkout</strong><small class="text-[0.74rem] text-muted">COD or online payment</small></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24 lg:py-28" id="menu">
+      <div class="shell">
+        <div class="mb-10 flex flex-col items-start gap-6 md:mb-14 md:flex-row md:items-end md:justify-between" data-reveal>
+          <div>
+            <p class="eyebrow">Today's favourites</p>
+            <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">Crowd-pleasers, made fresh</h2>
+          </div>
+          <a class="link-arrow" href="pages/login.html">See the full menu <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
+          <article class="dish-card reveal" data-reveal>
+            <div class="dish-thumb dish-thumb-1"><span class="dish-tag dish-tag-veg">Veg</span></div>
+            <div class="flex flex-1 flex-col px-5 pb-5 pt-2">
+              <div class="mb-2 flex justify-between gap-2.5 text-[0.7rem] font-semibold uppercase tracking-[0.05em] text-muted-light">
+                <span>Main course</span><span class="rating"><span aria-hidden="true">★</span> 4.8</span>
+              </div>
+              <h3 class="mb-2 text-lg font-bold">Paneer Butter Masala</h3>
+              <p class="text-[0.85rem] text-muted">Silky tomato-cashew gravy, soft paneer and a swirl of cream.</p>
+              <div class="mt-auto flex items-center justify-between gap-3 pt-[18px]">
+                <strong class="text-xl">₹280</strong>
+                <a class="btn btn-ghost btn-sm" href="pages/login.html">Add to cart</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" data-reveal>
+            <div class="dish-thumb dish-thumb-2"><span class="dish-tag">Bestseller</span></div>
+            <div class="flex flex-1 flex-col px-5 pb-5 pt-2">
+              <div class="mb-2 flex justify-between gap-2.5 text-[0.7rem] font-semibold uppercase tracking-[0.05em] text-muted-light">
+                <span>Burgers</span><span class="rating"><span aria-hidden="true">★</span> 4.9</span>
+              </div>
+              <h3 class="mb-2 text-lg font-bold">Smoky Chicken Burger</h3>
+              <p class="text-[0.85rem] text-muted">Charred chicken, smoked cheddar, pickles and house sauce.</p>
+              <div class="mt-auto flex items-center justify-between gap-3 pt-[18px]">
+                <strong class="text-xl">₹220</strong>
+                <a class="btn btn-ghost btn-sm" href="pages/login.html">Add to cart</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="dish-card reveal" data-reveal>
+            <div class="dish-thumb dish-thumb-3"><span class="dish-tag dish-tag-veg">Veg</span></div>
+            <div class="flex flex-1 flex-col px-5 pb-5 pt-2">
+              <div class="mb-2 flex justify-between gap-2.5 text-[0.7rem] font-semibold uppercase tracking-[0.05em] text-muted-light">
+                <span>Pizza</span><span class="rating"><span aria-hidden="true">★</span> 4.7</span>
+              </div>
+              <h3 class="mb-2 text-lg font-bold">Wood-fired Margherita</h3>
+              <p class="text-[0.85rem] text-muted">Blistered crust, San Marzano tomato, basil and mozzarella.</p>
+              <div class="mt-auto flex items-center justify-between gap-3 pt-[18px]">
+                <strong class="text-xl">₹260</strong>
+                <a class="btn btn-ghost btn-sm" href="pages/login.html">Add to cart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-line bg-paper py-20 md:py-24 lg:py-28" id="how">
+      <div class="shell">
+        <div class="mx-auto mb-10 max-w-2xl text-center md:mb-14" data-reveal>
+          <p class="eyebrow">How it works</p>
+          <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">From craving to doorstep</h2>
+          <p class="section-sub mx-auto">Three simple steps. No queues, no phone calls.</p>
+        </div>
+
+        <ol class="grid gap-5 md:grid-cols-3 md:gap-7">
+          <li class="step reveal" data-reveal>
+            <span class="mb-5 inline-block text-[0.76rem] font-extrabold uppercase tracking-[0.12em] text-accent-strong">01</span>
+            <h3 class="mb-2 text-lg font-bold">Browse &amp; pick</h3>
+            <p class="text-[0.87rem] text-muted">Filter by category, search your favourites and check live availability.</p>
+          </li>
+          <li class="step reveal" data-reveal>
+            <span class="mb-5 inline-block text-[0.76rem] font-extrabold uppercase tracking-[0.12em] text-accent-strong">02</span>
+            <h3 class="mb-2 text-lg font-bold">Checkout in seconds</h3>
+            <p class="text-[0.87rem] text-muted">Confirm your address, choose COD or online payment and place the order.</p>
+          </li>
+          <li class="step reveal" data-reveal>
+            <span class="mb-5 inline-block text-[0.76rem] font-extrabold uppercase tracking-[0.12em] text-accent-strong">03</span>
+            <h3 class="mb-2 text-lg font-bold">Track to your door</h3>
+            <p class="text-[0.87rem] text-muted">Watch the status move from the kitchen to pickup and delivery.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24 lg:py-28" id="why">
+      <div class="shell grid items-center gap-12 lg:grid-cols-[1fr_0.85fr] lg:gap-20">
+        <div class="reveal" data-reveal>
+          <p class="eyebrow">Why FOODIE</p>
+          <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">A better way to order</h2>
+          <p class="section-sub">
+            Built around the details that matter: accurate orders, clear prices and a
+            delivery you can follow in real time.
+          </p>
+          <ul class="my-6 grid gap-3.5">
+            <li>Server-verified prices and totals — no surprises at checkout.</li>
+            <li>Unavailable dishes are clearly marked, so orders never go wrong.</li>
+            <li>Order history keeps every receipt and address in one place.</li>
+          </ul>
+          <a class="btn btn-primary" href="pages/login.html">Sign in to order</a>
+        </div>
+
+        <div class="why-card reveal" data-reveal aria-hidden="true">
+          <div class="why-card-head">
+            <span class="brand-mark brand-mark-sm">F</span>
+            <span><strong>Your FOODIE receipt</strong><small>Every detail, saved</small></span>
+          </div>
+          <div class="receipt-row"><span>Paneer Butter Masala × 1</span><b>₹280</b></div>
+          <div class="receipt-row"><span>Smoky Chicken Burger × 1</span><b>₹220</b></div>
+          <div class="receipt-row"><span>Delivery fee</span><b>₹0</b></div>
+          <div class="receipt-row receipt-row-muted"><span>Tax</span><b>Included</b></div>
+          <div class="receipt-total"><span>Total</span><strong>₹500</strong></div>
+          <div class="receipt-status"><span class="fresh-dot"></span> Delivered in 28 minutes</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-20 md:pb-24 lg:pb-28">
+      <div class="shell">
+        <div class="cta-inner reveal" data-reveal>
+          <div>
+            <p class="eyebrow eyebrow-light">Hungry already?</p>
+            <h2 class="max-w-[18ch] text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Your next favourite meal is two clicks away.</h2>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a class="btn btn-primary" href="pages/login.html">Order now</a>
+            <a class="btn btn-outline-light" href="pages/login.html">I have an account</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-navy-deep py-14 text-white/70">
+    <div class="shell">
+      <div class="grid gap-9 border-b border-white/15 pb-10 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
+        <div class="sm:col-span-2 lg:col-span-1">
+          <a class="brand mb-3.5" href="index.html" aria-label="FOODIE home">
+            <span class="brand-mark" aria-hidden="true">F</span>
+            <span class="brand-copy"><strong>FOODIE</strong><small>Good food. Easy ordering.</small></span>
+          </a>
+          <p class="max-w-[30ch] text-[0.84rem]">Freshly cooked meals, honest prices and delivery you can track.</p>
+        </div>
+        <nav class="flex flex-col items-start gap-2.5" aria-label="Explore">
+          <h3 class="footer-heading">Explore</h3>
+          <a class="footer-link" href="#menu">Menu</a>
+          <a class="footer-link" href="#how">How it works</a>
+          <a class="footer-link" href="pages/login.html">Sign in</a>
+        </nav>
+        <nav class="flex flex-col items-start gap-2.5" aria-label="Company">
+          <h3 class="footer-heading">Company</h3>
+          <a class="footer-link" href="#why">Why FOODIE</a>
+          <a class="footer-link" href="pages/signup.html">Create account</a>
+          <a class="footer-link" href="#main">Back to top</a>
+        </nav>
+        <div>
+          <h3 class="footer-heading">Opening hours</h3>
+          <p class="footer-note">Mon–Sun<br />11:00 — 23:00</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-between gap-2.5 pt-5 text-[0.75rem] text-white/40">
+        <span>© <span data-year>2026</span> FOODIE. All rights reserved.</span>
+        <span>Made for the Online Food Ordering System.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

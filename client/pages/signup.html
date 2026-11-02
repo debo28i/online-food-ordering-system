@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create your FOODIE account and start ordering." />
+  <title>Create account — FOODIE</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body class="auth-page">
+  <a class="skip-link" href="#signup-form">Skip to account creation</a>
+  <main class="auth">
+    <section class="auth-side" aria-label="About FOODIE">
+      <a class="brand brand-light" href="../index.html" aria-label="FOODIE home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span class="brand-copy"><strong>FOODIE</strong><small>Good food. Easy ordering.</small></span>
+      </a>
+      <div class="auth-pitch">
+        <p class="eyebrow eyebrow-light">Join FOODIE</p>
+        <h1>Good food.<br /><span>Easy ordering.</span></h1>
+        <p>Create an account to save your favourites, manage your addresses and order with ease.</p>
+        <ul class="auth-features">
+          <li><span class="fresh-dot" aria-hidden="true"></span> Keep your favourite meals close</li>
+          <li><span class="fresh-dot" aria-hidden="true"></span> Manage delivery addresses with ease</li>
+          <li><span class="fresh-dot" aria-hidden="true"></span> Follow every order from kitchen to door</li>
+        </ul>
+      </div>
+      <blockquote class="auth-quote">"My regular order is always just a few taps away."<cite>— A happy FOODIE diner</cite></blockquote>
+    </section>
+    <section class="auth-main">
+      <div class="auth-card">
+        <a class="auth-back" href="../index.html"><span aria-hidden="true">←</span> Back to home</a>
+        <p class="eyebrow">Create your account</p>
+        <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Welcome to FOODIE</h1>
+        <p class="auth-sub">A few details and you are ready to order.</p>
+        <form class="auth-form" id="signup-form" data-signup-form novalidate>
+          <div class="form-field" data-field>
+            <label for="name">Full name</label>
+            <input class="field-input" id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" aria-describedby="name-error" required />
+            <p class="field-error" id="name-error" data-error></p>
+          </div>
+          <div class="form-field" data-field>
+            <label for="email">Email address</label>
+            <input class="field-input" id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" inputmode="email" aria-describedby="email-error" required />
+            <p class="field-error" id="email-error" data-error></p>
+          </div>
+          <div class="form-field" data-field>
+            <label for="password">Create a password</label>
+            <div class="password-wrap">
+              <input class="field-input" id="password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" aria-describedby="password-error" minlength="8" required />
+              <button class="password-toggle" type="button" data-toggle-password aria-label="Show passwords">Show</button>
+            </div>
+            <p class="field-error" id="password-error" data-error></p>
+          </div>
+          <div class="form-field" data-field>
+            <label for="confirm-password">Confirm password</label>
+            <input class="field-input" id="confirm-password" name="confirm-password" type="password" placeholder="Enter your password again" autocomplete="new-password" aria-describedby="confirm-password-error" required />
+            <p class="field-error" id="confirm-password-error" data-error></p>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Create account</button>
+          <p class="form-status" data-signup-status role="status" aria-live="polite"></p>
+        </form>
+        <p class="auth-switch">Already have an account? <a href="login.html">Sign in</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="../js/signup.js" defer></script>
+</body>
+</html>
